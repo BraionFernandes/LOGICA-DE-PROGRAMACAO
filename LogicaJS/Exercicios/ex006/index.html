@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de Programação com JS</title>
+</head>
+<body>
+    <h1>Logica de Programação</h1>
+
+    <script>
+        num = Number(prompt('digite um numero:'));
+        for(n = 1; n < 1001; n++){
+            document.body.innerHTML += `${num} x ${n} = ${num * n} <br>`;
+
+            if(n % 10 == 0){
+                document.body.innerHTML += `<hr>`
+            }
+        }
+    </script>
+</body>
+</html>

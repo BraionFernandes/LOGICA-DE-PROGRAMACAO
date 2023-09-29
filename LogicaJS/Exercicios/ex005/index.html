@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de Programação com JS</title>
+</head>
+<body>
+    <h1>Logica de Programação</h1>
+
+    <script>
+        j1 = Number(prompt('Jogador 1 digite um numero:'));
+        j2 = Number(prompt('Jogador 2 digite um numero:'));
+        if(j1 == j2){
+            alert('Empate');
+        } else {
+            n = parseInt(Math.random() * 2)
+            alert(`Número sorteado: ${n}`)
+            if(n == 0 && j1 < j2 || n == 1 && j1 > j2){
+                alert('Ganhou o Jogador 1');
+            } else {
+                alert('Ganhou o Jogador 2');
+            }
+        }
+    </script>
+</body>
+</html>
