@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de Programação com JS</title>
+</head>
+<body>
+    <h1>Logica de Programação</h1>
+
+    <div id="text"></div>
+    <button onclick="mostrarArea()">Mostrar Área:</button>
+    <script>
+        text = document.querySelector('#text');
+        altura = Number(prompt('Digite a altura:'));
+        largura = Number(prompt('Digite a largura:'));
+
+        function mostrarArea(){
+            area = calcularArea(altura, largura);
+            text.innerHTML += area
+        }
+
+        function calcularArea(a, l){
+            return a * l;
+        }
+    </script>
+</body>
+</html>

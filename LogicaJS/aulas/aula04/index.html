@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de Programação com JS</title>
+</head>
+<body>
+    <h1>Logica de Programação</h1>
+    <div>
+        <label for="n1">Digite um número:</label>
+        <input type="text" name="n1" id="n1">
+        <input type="button" value="Enviar" onclick="tabuada()">
+    </div>
+    <div id="text">
+
+    </div>
+    <script>
+        function tabuada(){
+            n1 = document.querySelector('#n1');
+            text = document.querySelector('#text');
+            n = Number(n1.value);
+            text.innerHTML = ''
+
+            for(tabu1 = 1; tabu1 <= 1000; tabu1++){
+            text.innerHTML += `${n} x ${tabu1} = ${n * tabu1} <br>`;
+        }
+    }
+    </script>
+</body>
+</html>

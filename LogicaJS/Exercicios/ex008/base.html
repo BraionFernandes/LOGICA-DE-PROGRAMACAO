@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de Programação com JS</title>
+</head>
+<body>
+    <h1>Logica de Programação</h1>
+
+    <div>
+        <input type="button" value="+" onclick="mais()">
+        <input type="button" value="-" onclick="menos()">
+        <input type="button" value="*" onclick="vezes()">
+        <input type="button" value="/" onclick="divi()">
+    </div>
+    <div id="text">
+
+    </div>
+
+    <script>
+        text = document.querySelector('#text');
+
+            n1 = Number(prompt('Digite um numero:'));
+                text.innerHTML = `${n1}`
+
+        function mais(){
+            n2 = Number(prompt('Digite outro numero:'));
+            n1 += n2
+                text.innerHTML = `${n1}`
+        }
+        function menos(){
+            n2 = Number(prompt('Digite um numero:'));
+            n1 -= n2
+                text.innerHTML = `${n1}`
+        }
+        function vezes(){
+            n2 = Number(prompt('Digite um numero:'));
+            n1 *= n2
+                text.innerHTML = `${n1}`
+        }
+        function divi(){
+            n2 = Number(prompt('Digite um numero:'));
+            n1 /= n2
+                text.innerHTML = `${n1}`
+        }
+    </script>
+</body>
+</html>
